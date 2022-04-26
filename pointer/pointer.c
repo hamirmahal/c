@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 /*
-cc -std=gnu11 -o ./pointer pointer.c && ./pointer > pointer.c.output.txt
+cc -std=gnu11 -o ./pointer pointer.c && ./pointer | tee pointer.c.output.txt
 */
 
 int main() {
