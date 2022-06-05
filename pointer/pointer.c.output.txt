@@ -1,8 +1,8 @@
 *ptr 0
 
-ptr 0x5596f35342a0
-&ptr 0x7ffe1c2e1ad0
-&*ptr 0x5596f35342a0
+ptr 0x560fca6e22a0
+&ptr 0x7ffde57ad230
+&*ptr 0x560fca6e22a0
 
 before increment 0
 after increment 1
