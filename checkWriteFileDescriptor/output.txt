@@ -1,33 +1,32 @@
-execve("./checkWriteFileDescriptor", ["./checkWriteFileDescriptor"], 0x7ffc24d211a0 /* 34 vars */) = 0
-brk(NULL)                               = 0x55818bcd5000
-arch_prctl(0x3001 /* ARCH_??? */, 0x7fffcbfbae80) = -1 EINVAL (Invalid argument)
+execve("./checkWriteFileDescriptor", ["./checkWriteFileDescriptor"], 0x7ffc364cfec0 /* 35 vars */) = 0
+brk(NULL)                               = 0x56171f612000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc03103330) = -1 EINVAL (Invalid argument)
 access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
-fstat(3, {st_mode=S_IFREG|0644, st_size=69713, ...}) = 0
-mmap(NULL, 69713, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7febbe80c000
+fstat(3, {st_mode=S_IFREG|0644, st_size=41358, ...}) = 0
+mmap(NULL, 41358, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f3194dc9000
 close(3)                                = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
-read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360q\2\0\0\0\0\0"..., 832) = 832
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360A\2\0\0\0\0\0"..., 832) = 832
 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
 pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
-pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\363\377?\332\200\270\27\304d\245n\355Y\377\t\334"..., 68, 880) = 68
-fstat(3, {st_mode=S_IFREG|0755, st_size=2029224, ...}) = 0
-mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7febbe80a000
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\237\333t\347\262\27\320l\223\27*\202C\370T\177"..., 68, 880) = 68
+fstat(3, {st_mode=S_IFREG|0755, st_size=2029560, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3194dc7000
 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
 pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
-pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\363\377?\332\200\270\27\304d\245n\355Y\377\t\334"..., 68, 880) = 68
-mmap(NULL, 2036952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7febbe618000
-mprotect(0x7febbe63d000, 1847296, PROT_NONE) = 0
-mmap(0x7febbe63d000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x25000) = 0x7febbe63d000
-mmap(0x7febbe7b5000, 303104, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19d000) = 0x7febbe7b5000
-mmap(0x7febbe800000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7febbe800000
-mmap(0x7febbe806000, 13528, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7febbe806000
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\237\333t\347\262\27\320l\223\27*\202C\370T\177"..., 68, 880) = 68
+mmap(NULL, 2037344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3194bd5000
+mmap(0x7f3194bf7000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7f3194bf7000
+mmap(0x7f3194d6f000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19a000) = 0x7f3194d6f000
+mmap(0x7f3194dbd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7f3194dbd000
+mmap(0x7f3194dc3000, 13920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3194dc3000
 close(3)                                = 0
-arch_prctl(ARCH_SET_FS, 0x7febbe80b540) = 0
-mprotect(0x7febbe800000, 12288, PROT_READ) = 0
-mprotect(0x55818a6b4000, 4096, PROT_READ) = 0
-mprotect(0x7febbe84b000, 4096, PROT_READ) = 0
-munmap(0x7febbe80c000, 69713)           = 0
+arch_prctl(ARCH_SET_FS, 0x7f3194dc8540) = 0
+mprotect(0x7f3194dbd000, 16384, PROT_READ) = 0
+mprotect(0x56171d76a000, 4096, PROT_READ) = 0
+mprotect(0x7f3194e01000, 4096, PROT_READ) = 0
+munmap(0x7f3194dc9000, 41358)           = 0
 dup(2)                                  = 3
 fcntl(3, F_GETFL)                       = 0x1 (flags O_WRONLY)
 close(3)                                = 0
@@ -35,8 +34,8 @@ write(2, "perror!\n: Success\n", 18perror!
 : Success
 )    = 18
 fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
-brk(NULL)                               = 0x55818bcd5000
-brk(0x55818bcf6000)                     = 0x55818bcf6000
+brk(NULL)                               = 0x56171f612000
+brk(0x56171f633000)                     = 0x56171f633000
 write(1, "printf!\n", 8printf!
 )                = 8
 exit_group(0)                           = ?
