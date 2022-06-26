@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
-cc -Wall --std=c11 -o string string.c
+cc -Wall --std=c11 -o string string.c && ./string
 */
 int main (int argc, char* argv[]) {
     char* addressToMyString = "Hello, world!";
