@@ -7,10 +7,6 @@
 // for strcpy
 #include <string.h>
 
-/*
-cc -std=gnu11 -Wall -o strcpy strcpy.c && ./strcpy > strcpy.output.txt
-*/
-
 struct list_s {
   struct list_s *next;
   char *str;
