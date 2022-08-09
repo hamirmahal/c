@@ -4,10 +4,6 @@
 // for fork!
 #include <unistd.h>
 
-/*
-cc -Wall -std=gnu11 -o fork fork.c && ./fork
-*/
-
 int main(int argc, char *argv[]) {
   fork();
   int x = 3;

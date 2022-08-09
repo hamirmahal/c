@@ -4,10 +4,6 @@
 // malloc
 #include <stdlib.h>
 
-/*
-cc -Wall -std=gnu11 -o ./pointer pointer.c && ./pointer | tee pointer.c.output.txt
-*/
-
 int main() {
   int *ptr = malloc(sizeof(int));
   printf("*ptr %d\n\n", *ptr);
